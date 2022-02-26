@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func init() {
 	fmt.Println("main init")
+}
+
+func init() {
 }

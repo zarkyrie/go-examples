@@ -46,3 +46,10 @@ func TestRange3(t *testing.T) {
 	}
 	fmt.Println(numbers2)
 }
+
+func TestRange4(t *testing.T) {
+	list := []Foo{{"a"}, {"b"}, {"c"}}
+	for i := range list {
+		fmt.Println(i)
+	}
+}
