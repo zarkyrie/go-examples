@@ -1,5 +1,9 @@
 package main
 
+import (
+	"fmt"
+)
+
 func main() {
 	//stopCh := make(chan struct{})
 	//fmt.Println("main 1")
@@ -8,6 +12,25 @@ func main() {
 	//fmt.Println("main 2")
 	//close(stopCh)
 	//time.Sleep(2 * time.Second)
+
+	//go func() {
+	//	defer func() {
+	//		if err := recover(); err != nil {
+	//			fmt.Println(err)
+	//		}
+	//	}()
+	//	panic("hllow")
+	//}()
+	//
+	//if err := recover(); err != nil {
+	//	fmt.Println(err)
+	//}
+	//time.Sleep(1 * time.Second)
+	//fmt.Println("main")
+
+	obj := BStruct{}
+	obj.Show()
+	obj.ShowV2()
 }
 
 //func Show(stopCh <-chan struct{}) {
@@ -15,3 +38,23 @@ func main() {
 //	<-stopCh
 //	fmt.Println("step 2")
 //}
+
+type AStruct struct {
+	name string
+}
+
+func (receiver AStruct) Show() {
+	fmt.Println("A struct")
+}
+
+func (receiver AStruct) ShowV2() {
+	fmt.Println("A struct V2")
+}
+
+type BStruct struct {
+	AStruct
+}
+
+func (receiver BStruct) Show() {
+	fmt.Println("B struct")
+}

@@ -1,4 +1,4 @@
-package ifforswitch
+package conditionloop
 
 import (
 	"fmt"

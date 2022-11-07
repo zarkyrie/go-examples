@@ -1,6 +1,5 @@
 package gen
 
-//
 //import "fmt"
 //
 ////go:generate ./gen.sh ../template/container.tmp.go gen uint32 container

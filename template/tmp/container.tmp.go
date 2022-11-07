@@ -1,6 +1,5 @@
 package PACKAGE_NAME
 
-//
 //type GENERIC_NAMEContainer struct {
 //	s []GENERIC_TYPE
 //}
