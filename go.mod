@@ -1,4 +1,4 @@
-module go-examples
+module github.com/valkex/go-examples
 
 go 1.19
 

@@ -28,9 +28,9 @@ func main() {
 	//time.Sleep(1 * time.Second)
 	//fmt.Println("main")
 
-	obj := BStruct{}
-	obj.Show()
-	obj.ShowV2()
+	aStruct := AStruct{name: "hello"}
+	aStruct.Show()
+	fmt.Print(aStruct.name)
 }
 
 //func Show(stopCh <-chan struct{}) {
@@ -45,6 +45,7 @@ type AStruct struct {
 
 func (receiver AStruct) Show() {
 	fmt.Println("A struct")
+	receiver.name = "dsdfa"
 }
 
 func (receiver AStruct) ShowV2() {
